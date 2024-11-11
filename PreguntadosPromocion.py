@@ -46,6 +46,11 @@ else:
         print (opciones[x])
         print ("")
         respuesta=input("ingresar respuesta:")
+        respuesta=respuesta.lower()
+        while respuesta != "a" and respuesta != "b" and respuesta != "c" and respuesta != "d":
+            print ("introducción invalida,vuelva a ingresar su respuesta ")
+            print ("")
+            respuesta=input("ingresar respuesta:")
         if respuesta == respuestas[x]:
             nota = nota + 2
             correctas = correctas + 1
